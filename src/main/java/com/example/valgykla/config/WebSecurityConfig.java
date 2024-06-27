@@ -1,6 +1,6 @@
 package com.example.valgykla.config;
 
-import com.example.valgykla.service.UserDetailsServiceImpl;
+import com.example.valgykla.service.user.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

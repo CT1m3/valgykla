@@ -1,9 +1,9 @@
 package com.example.valgykla.config;
 
 import com.example.valgykla.repository.UserRepository;
-import com.example.valgykla.service.UserDetailsServiceImpl;
-import com.example.valgykla.service.UserService;
-import com.example.valgykla.service.UserServiceImpl;
+import com.example.valgykla.service.user.UserDetailsServiceImpl;
+import com.example.valgykla.service.user.UserService;
+import com.example.valgykla.service.user.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

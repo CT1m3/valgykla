@@ -1,7 +1,7 @@
 package com.example.valgykla.controller;
 
 import com.example.valgykla.model.User;
-import com.example.valgykla.service.UserService;
+import com.example.valgykla.service.user.UserService;
 import com.example.valgykla.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
