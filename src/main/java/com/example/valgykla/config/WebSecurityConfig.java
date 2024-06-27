@@ -52,9 +52,9 @@ public class WebSecurityConfig {
             http.authorizeHttpRequests((authorize) -> authorize
                     .requestMatchers("/edit").hasAuthority("ADMIN")
                     .requestMatchers("/delete").hasAuthority("ADMIN")
-                    .requestMatchers("/restaurant").hasAuthority("ADMIN")
+                    .requestMatchers("/restaurants").hasAuthority("ADMIN")
                     .requestMatchers("/food").hasAuthority("ADMIN")
-                    .requestMatchers("/menu").hasAuthority("ADMIN")
+                    .requestMatchers("/menus").hasAuthority("ADMIN")
                     .requestMatchers("/restaurant/edit/**").hasAuthority("ADMIN")
                     .requestMatchers("/restaurant/delete/**").hasAuthority("ADMIN")
             );
