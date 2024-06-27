@@ -15,21 +15,26 @@ public class Restaurant {
     private int code;
     @Column(name = "address")
     private String address;
+    @Column(name = "menu_id")
+    private int menuId;
 
     public Restaurant() {
+
     }
 
-    public Restaurant(String name, int code, String address) {
+    public Restaurant(String name, int code, String address, int menuId) {
         this.name = name;
         this.code = code;
         this.address = address;
+        this.menuId = menuId;
     }
 
-    public Restaurant(int id, String name, int code, String address) {
+    public Restaurant(int id, String name, int code, String address, int menuId) {
         this.id = id;
         this.name = name;
         this.code = code;
         this.address = address;
+        this.menuId = menuId;
     }
 
     public int getId() {
@@ -64,6 +69,14 @@ public class Restaurant {
         this.address = address;
     }
 
+    public int getMenuId() {
+        return menuId;
+    }
+
+    public void setMenuId(int menuId) {
+        this.menuId = menuId;
+    }
+
     @Override
     public String toString() {
         return "Restaurant{" +
@@ -71,6 +84,7 @@ public class Restaurant {
                 ", name='" + name + '\'' +
                 ", code=" + code +
                 ", address='" + address + '\'' +
+                ", menuId=" + menuId +
                 '}';
     }
 }

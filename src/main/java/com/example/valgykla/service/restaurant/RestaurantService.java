@@ -13,4 +13,6 @@ public interface RestaurantService {
     void deleteById(int id);
 
     Optional<Restaurant> findById(int id);
+
+    List<Restaurant> findRestaurantByName(String query);
 }

@@ -31,4 +31,8 @@ public class RestaurantServiceImpl implements RestaurantService {
     public Optional<Restaurant> findById(int id) {
         return restaurantRepository.findById(id);
     }
+    @Override
+    public List<Restaurant> findRestaurantByName(String query) {
+        return restaurantRepository.findByNameContainingIgnoreCase(query);
+    }
 }

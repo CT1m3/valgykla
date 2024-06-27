@@ -1,6 +1,7 @@
 package com.example.valgykla.controller;
 
 import com.example.valgykla.model.Restaurant;
+import com.example.valgykla.service.menu.MenuService;
 import com.example.valgykla.service.restaurant.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,8 @@ import java.util.Optional;
 public class RestaurantController {
     @Autowired
     RestaurantService restaurantService;
+    @Autowired
+    MenuService menuService;
     @GetMapping("/restaurants")
     public String restaurant(Model model) {
         List<Restaurant> restaurantList = restaurantService.findAll();
@@ -46,4 +49,8 @@ public class RestaurantController {
         restaurantService.save(restaurant);
         return "redirect:/restaurants";
     }
+//    @GetMapping("/restaurant/view/{id}")
+//    public String selectRestaurant(@PathVariable("id") int id, Model model){
+//        re
+//    }
 }
