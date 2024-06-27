@@ -1,7 +1,8 @@
 package com.example.valgykla.service;
 
-import org.springframework.stereotype.Service;
+import com.example.valgykla.model.User;
 
-@Service
 public interface UserService {
+    User findByUsername(String username);
+    void save(User user);
 }
